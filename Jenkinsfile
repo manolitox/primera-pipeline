@@ -11,10 +11,10 @@ pipeline {
                 sh label: '', script: './a.out'
             }
         }
-        stage('Chucking...') { 
-            steps {
+    }
+    post {
+    always {
                 chuckNorris()
-            }
         }
     }
 }
