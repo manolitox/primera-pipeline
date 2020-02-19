@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Exec') { 
             steps {
-                a.out
+                sh label: '', script: './a.out'
             }
         }
     }
