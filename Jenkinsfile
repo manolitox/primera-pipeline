@@ -11,5 +11,10 @@ pipeline {
                 sh label: '', script: './a.out'
             }
         }
+        stage('Chucking...') { 
+            steps {
+                chuckNorris()
+            }
+        }
     }
 }
