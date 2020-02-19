@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Make') { 
             steps {
-                make all
+               sh label: '', script: 'make all'
             }
         }
         stage('Exec') { 
